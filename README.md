@@ -8,7 +8,6 @@ A simple Java application demonstrating Object-Oriented Programming (OOP) concep
 - [Features](#features)
 - [Classes](#classes)
 - [Usage](#usage)
-- [Example](#example)
 
 ## Introduction
 
@@ -58,26 +57,3 @@ PartTimeEmployee emp2 = new PartTimeEmployee("Jane Smith", 2, 20, 25);
 
 payrollSystem.addEmployee(emp1);
 payrollSystem.addEmployee(emp2);
-
-## Example
-
-public class Main {
-    public static void main(String[] args) {
-        PayrollSystem payrollSystem = new PayrollSystem();
-        
-        FullTimeEmployee emp1 = new FullTimeEmployee("Alice", 1, 7000);
-        PartTimeEmployee emp2 = new PartTimeEmployee("Bob", 2, 40, 100);
-
-        payrollSystem.addEmployee(emp1);
-        payrollSystem.addEmployee(emp2);
-
-        System.out.println("Initial Employee Details: ");
-        payrollSystem.displayEmployees();
-
-        System.out.println("Removing Employee with ID 2");
-        payrollSystem.removeEmployee(2);
-
-        System.out.println("Remaining Employee Details:");
-        payrollSystem.displayEmployees();
-    }
-}
